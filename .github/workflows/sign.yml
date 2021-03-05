@@ -5,6 +5,7 @@ on:
 
 jobs:
   sign:
+    environment: signer
     runs-on: macos-latest
     env:
       SECRET_URL: "${{ secrets.SECRET_URL }}"
